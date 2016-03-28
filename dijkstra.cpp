@@ -1,8 +1,5 @@
 #include <iostream>
-#include <ctime>
-#include <cstdlib>
 #include <vector>
-#include <cmath>
 
 using namespace std;
 
@@ -40,7 +37,7 @@ void Graph::generateGraph(double density, double minDist, double maxDist)
                 if (prob() < density) {
                     Node* newNode = new Node();
                     newNode->weight = prob() * (maxDist - minDist);
-                    this->nodes[i].neighbors.push_back(newNode);
+//                    this->nodes[i].neighbors.push_back(newNode);
 //                    cout << this->nodes[i].weight << endl;
                 }
             }
